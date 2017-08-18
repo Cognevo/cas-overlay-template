@@ -167,23 +167,16 @@ header h1 {
 
 #logo-header {
     position: absolute;
-    width: 600px;
-    top: 40px;
+    width: 648px;
+    height: 77px;
+    top: 60px;
     left: 60px;
     margin: 0 0 30px;
-}
-
-#logo-header .title {
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 34px;
-    background: none;
+    padding: 0;
     background-image: url(../images/logo.png);
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: contain;
-    text-transform: uppercase;
-    padding: 0 0 0 84px;
+    overflow: hidden;
 }
 
 #login {
