@@ -30,5 +30,7 @@
     <a id="logo" href="http://www.apereo.org" title="<spring:message code="logo.title" />">Apereo</a>
     <h1>Central Authentication Service (CAS)</h1>
   </header> -->
-  <header id="logo-header"></header> 
+  <header id="logo-header">
+    <h2 class="title">Telstra Advanced <br />Security Analytics</h2>
+  </header> 
   <div id="content">
