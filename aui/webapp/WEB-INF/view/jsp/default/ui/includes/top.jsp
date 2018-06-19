@@ -26,9 +26,18 @@
 <body id="cas">
 
 <div id="container">
-  <!-- <header>
-    <a id="logo" href="http://www.apereo.org" title="<spring:message code="logo.title" />">Apereo</a>
-    <h1>Central Authentication Service (CAS)</h1>
-  </header> -->
-  <header id="logo-header"></header> 
+  <%final Boolean auiCallback = request.getQueryString() == null ? false : request.getQueryString().contains("aui");%>
+  <c:set var='isAui' value='<%=auiCallback%>' />
+  <c:choose>
+    <c:when test="${isAui}">
+      <header id="logo-header">
+        <img src="./images/logo.png" width="648" height="77" alt="Telstra Advanced Security Analytics" />
+      </header>
+    </c:when>
+    <c:otherwise>
+      <header id="logo-header">
+        <img src="./images/logo-threat-lookup.png" width="648" height="77" alt="Telstra Threat Lookup" />
+      </header>
+    </c:otherwise>
+  </c:choose>
   <div id="content">
